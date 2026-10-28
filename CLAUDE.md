@@ -43,4 +43,9 @@ React 19, TypeScript, Vite, Tailwind 4, framer-motion (Animationen), react-rnd (
 
 - 28.10.2026: Erster Commit gepusht nach github.com/tobzwil89/tobiaszwilling-desktop (`main` überschrieben; alte
   Portfolio-Seite vom April 2026 gesichert im Zweig `alte-website`, enthält Über-mich-Text, Profilbild, Screenshots).
-- Offen: Pages-Quelle „GitHub Actions“ einstellen, Repository öffentlich?, DNS-A-Einträge für `tobiaszwilling.me`.
+- 28.10.2026 abends: Repository öffentlich, DNS (4 A-Einträge `@`, CNAME `www`) gesetzt und weltweit sichtbar,
+  HTTPS-Zertifikat (Let's Encrypt) aktiv. **Aber:** Pages-Quelle stand noch auf „Deploy from a branch“ → GitHub liefert
+  den rohen Quellcode (`/src/main.tsx`), Seite bleibt weiß. Erkennbar an Läufen „pages build and deployment“.
+- 28.10.2026, 20:44: Pages-Quelle auf „GitHub Actions“ umgestellt. **Seite live** unter https://tobiaszwilling.me,
+  per Playwright geprüft (Desktop + Handy): Insider im Fenster, Deutsch Desktop im neuen Tab, keine Fehler.
+  Ab jetzt baut jeder Push auf `main` die Seite automatisch neu.
