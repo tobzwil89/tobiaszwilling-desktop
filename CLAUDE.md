@@ -38,6 +38,8 @@ React 19, TypeScript, Vite, Tailwind 4, framer-motion (Animationen), react-rnd (
 - 28.10.2026: Insider-Monitor in `apps.json` eingetragen (erste Stelle, im Dock). Neues Feld `embed: false` → App öffnet
   in neuem Tab; alle Öffnen-Knöpfe laufen über `launchApp()` in `registry.ts`. Deutsch Desktop nutzt das.
   LinkedIn in `config.ts`. Geprüft per Playwright (Desktop + Handy). Sicherung vorher: `../.sicherung-desktop-20261028/`.
+- 28.10.2026, spät: Rollenspiel-Eintrag in `apps.json` bekommt `url` https://roleplay.tobiaszwilling.me und
+  `embed: false` (Einstiegsseite aus `../roleplay-landing`). Per Playwright geprüft: Klick öffnet neuen Tab (Rechner + Handy).
 
 ## Offen
 

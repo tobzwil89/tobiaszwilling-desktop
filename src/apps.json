@@ -37,10 +37,12 @@
       "de": "Jugendfreie KI-Rollenspiel-App auf Deutsch und Englisch, ohne Einrichtung nutzbar. In Arbeit.",
       "en": "Family-friendly AI roleplay app in German and English, no setup needed. Work in progress."
     },
+    "url": "https://roleplay.tobiaszwilling.me",
     "tech": ["Next.js", "TypeScript", "Supabase"],
     "icon": "🎭",
     "color": "#8b5cf6",
-    "dock": true
+    "dock": true,
+    "embed": false
   },
   {
     "id": "training",
