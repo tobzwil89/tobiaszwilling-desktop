@@ -1,0 +1,59 @@
+[
+  {
+    "id": "insider",
+    "title": "Insider-Monitor",
+    "description": {
+      "de": "Directors' Dealings von DAX- und MDAX-Firmen seit 2018, live ausgewertet mit der Event Study aus meiner Bachelorarbeit. Neue BaFin-Meldungen alle 30 Minuten, Cluster-Käufe und ein Ranking der Insider nach Timing.",
+      "en": "Directors' dealings at DAX and MDAX companies since 2018, analysed live with the event study from my bachelor's thesis. New BaFin filings every 30 minutes, cluster buys and a ranking of insiders by timing."
+    },
+    "url": "https://insider.tobiaszwilling.me",
+    "source": "https://github.com/tobzwil89/insider",
+    "tech": ["Python", "GitHub Actions", "JavaScript"],
+    "icon": "📈",
+    "color": "#059669",
+    "size": { "w": 1200, "h": 780 },
+    "dock": true
+  },
+  {
+    "id": "deutsch",
+    "title": "Deutsch Desktop",
+    "description": {
+      "de": "Gamifizierte Deutsch-Lernseite im Desktop-Stil: Vokabeltrainer, Der/Die/Das-Spiel, Konjugationstrainer und Einstufungstest. Kein Backend, der Fortschritt bleibt im Browser.",
+      "en": "Gamified German learning site in a desktop style: vocab trainer, der/die/das arcade game, verb drills and a level test. No backend, progress stays in the browser."
+    },
+    "url": "https://lernen.tobiaszwilling.me",
+    "source": "https://github.com/tobzwil89/deutsch-desktop",
+    "tech": ["React", "TypeScript", "Vite", "Tailwind"],
+    "icon": "🇩🇪",
+    "color": "#f59e0b",
+    "size": { "w": 1100, "h": 720 },
+    "dock": true,
+    "embed": false
+  },
+  {
+    "id": "roleplay",
+    "title": { "de": "Rollenspiel", "en": "Roleplay" },
+    "description": {
+      "de": "Jugendfreie KI-Rollenspiel-App auf Deutsch und Englisch, ohne Einrichtung nutzbar. In Arbeit.",
+      "en": "Family-friendly AI roleplay app in German and English, no setup needed. Work in progress."
+    },
+    "tech": ["Next.js", "TypeScript", "Supabase"],
+    "icon": "🎭",
+    "color": "#8b5cf6",
+    "dock": true
+  },
+  {
+    "id": "training",
+    "title": "Training",
+    "description": {
+      "de": "Offline-fähiges Trainingstagebuch.",
+      "en": "Offline-capable workout log."
+    },
+    "url": "https://training.tobiaszwilling.me",
+    "tech": ["JavaScript"],
+    "icon": "🏋️",
+    "color": "#dc2626",
+    "size": { "w": 480, "h": 760 },
+    "private": true
+  }
+]

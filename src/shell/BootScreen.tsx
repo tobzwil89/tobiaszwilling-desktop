@@ -1,0 +1,47 @@
+import { useEffect } from 'react'
+import { m, useReducedMotion } from 'framer-motion'
+import { SITE_NAME } from '../config'
+import { useT } from '../i18n'
+import { Logo } from './MenuBar'
+
+export function BootScreen({ onDone }: { onDone: () => void }) {
+  const reduce = useReducedMotion()
+  const { t } = useT()
+  const duration = reduce ? 0.3 : 1.2
+
+  useEffect(() => {
+    const timer = setTimeout(onDone, duration * 1000)
+    // Überspringen per Klick, Tippen oder Taste
+    window.addEventListener('keydown', onDone)
+    window.addEventListener('pointerdown', onDone)
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('keydown', onDone)
+      window.removeEventListener('pointerdown', onDone)
+    }
+  }, [onDone, duration])
+
+  return (
+    <m.div
+      className="fixed inset-0 z-[10000] grid place-items-center bg-slate-950 text-white"
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      role="status"
+      aria-label={`${t('starting')}: ${SITE_NAME}`}
+    >
+      <div className="flex flex-col items-center gap-6">
+        <Logo size={64} className="text-indigo-400" />
+        <p className="text-lg font-semibold tracking-wide">{SITE_NAME}</p>
+        <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/15">
+          <m.div
+            className="h-full rounded-full bg-white"
+            initial={{ width: '0%' }}
+            animate={{ width: '100%' }}
+            transition={{ duration, ease: 'easeInOut' }}
+          />
+        </div>
+        <p className="text-xs text-white/60">{t('skip')}</p>
+      </div>
+    </m.div>
+  )
+}
