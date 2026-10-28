@@ -8,7 +8,7 @@ Stand: 23. Oktober 2026
 
 ## 1. Offene Punkte nach dem ersten Bau
 
-- [ ] Texte „Über mich“ füllen (`TAGLINE`, `INTRO` oben in `src/apps/AboutApp.tsx`) und Foto in `src/config.ts` (LinkedIn ist seit 28.10.2026 eingetragen)
+- [x] „Über mich“ entfernt (28.10.2026, nicht gebraucht)
 - [ ] Ersten Commit machen, Repository `tobiaszwilling-desktop` auf GitHub anlegen, pushen
 - [ ] DNS: vier A-Einträge für `tobiaszwilling.me` (Schritte in `README.md`), danach HTTPS erzwingen
 - [ ] Impressum und Datenschutz gegenlesen (übernommen und angepasst aus `deutsch-desktop`)

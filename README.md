@@ -36,10 +36,10 @@ Einen Eintrag in `src/apps.json` ergänzen. Mehr ist nicht nötig.
 
 | Feld | Pflicht | Bedeutung |
 |---|---|---|
-| `id` | ja | Eindeutiger Kurzname, nur Kleinbuchstaben. Nicht `about` oder `legal` (die gibt es schon). |
+| `id` | ja | Eindeutiger Kurzname, nur Kleinbuchstaben. Nicht `legal` (die gibt es schon). |
 | `title` | ja | Name. Entweder `"Text"` (gleich in beiden Sprachen) oder `{ "de": "…", "en": "…" }`. |
 | `icon` | ja | Emoji (`"✈️"`), Buchstabe (`"F"`) oder Bild aus `public/` (`"/icons/flugpass.png"`). |
-| `description` | nein | Kurzbeschreibung für den Steckbrief (ⓘ-Knopf) und „Über mich“. Wie `title` ein- oder zweisprachig. |
+| `description` | nein | Kurzbeschreibung für den Steckbrief (ⓘ-Knopf). Wie `title` ein- oder zweisprachig. |
 | `url` | nein | Adresse der App. **Ohne** `url` zeigt das Fenster nur den Steckbrief mit „In Arbeit“. |
 | `source` | nein | Link zum Quellcode. |
 | `tech` | nein | Technik-Schlagworte als Liste. |
@@ -69,8 +69,7 @@ Eine App lässt sich nur einbetten, wenn sie das erlaubt. Seiten auf GitHub Page
 
 | Was | Wo |
 |---|---|
-| Name, E-Mail, LinkedIn, GitHub, Foto | `src/config.ts` |
-| Text „Über mich“ | `src/apps/AboutApp.tsx`, oben (`TAGLINE`, `INTRO`) |
+| Name, E-Mail | `src/config.ts` |
 | Impressum, Datenschutz | `src/config.ts` (`IMPRINT`) und `src/apps/LegalApp.tsx` |
 | Feste Oberflächentexte (DE/EN) | `src/i18n.ts` |
 
@@ -87,7 +86,6 @@ src/
     AppContent.tsx     Entscheidet, was im Fenster steht: eingebaute App oder Webseite
     WebApp.tsx         Webseite im iframe plus Projektsteckbrief (ⓘ)
     AppIcon.tsx        Icon aus Emoji/Buchstabe auf Farbkachel oder aus Bilddatei
-    AboutApp.tsx       Eingebaute App „Über mich“ (Texte oben in der Datei)
     LegalApp.tsx       Eingebaute App „Rechtliches“ (Impressum, Datenschutz)
     ui.tsx             Umschalter (Segmented) für die eingebauten Apps
   shell/               Die Desktop-Oberfläche, unabhängig von einzelnen Apps

@@ -3,15 +3,8 @@
 export const OWNER_NAME = 'Tobias Zwilling'
 export const SITE_NAME = 'Tobias Zwilling'
 
-/** Kontaktadresse für Impressum und „Über mich“. */
+/** Kontaktadresse für das Impressum. */
 export const CONTACT_EMAIL = 'tobzwilling@gmx.de'
-
-/** Links in „Über mich“. Leer = wird ausgeblendet. */
-export const LINKEDIN_URL = 'https://www.linkedin.com/in/tobiaszwilling/'
-export const GITHUB_URL = 'https://github.com/tobzwil89'
-
-/** Pfad zu deinem Foto, z. B. '/tobias.jpg' (Datei in public/ legen). Leer = Initialen. */
-export const PHOTO_URL = ''
 
 // Impressum – vor dem Livegang prüfen. Kein Rechtsrat.
 export const IMPRINT = {

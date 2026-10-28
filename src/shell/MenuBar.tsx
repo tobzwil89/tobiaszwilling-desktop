@@ -58,10 +58,6 @@ function LogoMenu() {
           role="menu"
           className="absolute left-0 top-7 w-60 rounded-lg border border-black/10 bg-white/95 p-1 text-[13px] shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-slate-800/95"
         >
-          <button role="menuitem" className={item} onClick={run(() => openApp('about'))}>
-            {t('about')}
-          </button>
-          <div className="my-1 h-px bg-black/10 dark:bg-white/10" />
           {(['system', 'light', 'dark'] as const).map((th) => (
             <button key={th} role="menuitemradio" aria-checked={theme === th} className={item} onClick={run(() => setTheme(th))}>
               {theme === th ? '✓ ' : ' '}

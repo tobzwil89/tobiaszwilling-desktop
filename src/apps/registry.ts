@@ -29,7 +29,7 @@ export type AppEntry = {
 export type AppDef = AppEntry & {
   color: string
   size: { w: number; h: number }
-  /** Nur eingebaute Apps (Über mich, Rechtliches) haben eigenen Code. */
+  /** Nur die eingebaute App Rechtliches hat eigenen Code. */
   Component?: LazyExoticComponent<ComponentType>
 }
 
@@ -37,15 +37,6 @@ const DEFAULT_SIZE = { w: 960, h: 680 }
 export const MIN_SIZE = { w: 340, h: 320 }
 
 const BUILTIN: AppDef[] = [
-  {
-    id: 'about',
-    title: { de: 'Über mich', en: 'About me' },
-    icon: '👋',
-    color: '#334155',
-    size: { w: 620, h: 640 },
-    dock: true,
-    Component: lazy(() => import('./AboutApp')),
-  },
   {
     id: 'legal',
     title: { de: 'Rechtliches', en: 'Legal' },

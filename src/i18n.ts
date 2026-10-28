@@ -15,7 +15,6 @@ export function browserLang(): Lang {
 
 // Alle festen Texte der Oberfläche
 const STRINGS = {
-  about: { de: 'Über mich', en: 'About me' },
   legal: { de: 'Impressum & Datenschutz', en: 'Legal & Privacy' },
   legalShort: { de: 'Rechtliches', en: 'Legal' },
   themeSystem: { de: 'Wie das System', en: 'Match system theme' },
@@ -42,7 +41,6 @@ const STRINGS = {
   loading: { de: 'Lädt', en: 'Loading' },
   starting: { de: 'Startet', en: 'Starting' },
   skip: { de: 'Klicken oder Taste drücken zum Überspringen', en: 'Click or press any key to skip' },
-  projects: { de: 'Projekte', en: 'Projects' },
   private: { de: 'privat', en: 'private' },
 } satisfies Record<string, Record<Lang, string>>
 
